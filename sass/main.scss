@@ -1,0 +1,17 @@
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/grid";
+@import "base/bases";
+
+
+@import "pages/home-page/components/heading";
+@import "pages/home-page/components/navigation";
+@import "pages/home-page/components/button";
+@import "pages/home-page/components/footer";
+
+@import "pages/home-page/parts/header";
+@import "pages/home-page/parts/short-explain";
+@import "pages/home-page/parts/products";
+@import "pages/home-page/parts/picture";
+@import "pages/home-page/parts/tour";

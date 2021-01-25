@@ -1,0 +1,55 @@
+//<!--/****HOME PAGE****/-->
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom,
+                    rgba($color-blue-dark, .6),
+                    rgba($color-blue-light, .6)),
+                    url("../img/bg-pic-small.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  //change the background picture
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+          only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+          only screen and (min-width: 125em) {
+    background-image: linear-gradient(to right bottom,
+                    rgba($color-blue-dark, .6),
+                    rgba($color-blue-light, .6)),
+                    url("../img/bg-pic-big.jpg");
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    opacity: .7;
+  }
+
+  &__logo-pic {
+    height: 13.45rem;
+
+    @include respond(tab-land) {
+      height: 11.45rem;
+    }
+
+    @include respond(tab-port) {
+      height: 10.45rem;
+    }
+
+    @include respond(phone) {
+      height: 8.45rem;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  //&__heading-huge-span {
+  //
+  //}
+}

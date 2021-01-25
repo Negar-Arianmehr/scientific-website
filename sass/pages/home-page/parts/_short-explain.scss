@@ -1,0 +1,14 @@
+// <!---/****HOME PAGE****/---->
+//<!--//...SHORT-EXPLAIN....//-->
+
+.short-explain {
+  background-color: $color-gray-light-1;
+  margin: 0 auto;
+
+  &__text {
+    font-size: 3rem;
+    line-height: 1.4;
+    padding: 5rem 15rem;
+    text-align: justify;
+  }
+}

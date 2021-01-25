@@ -1,0 +1,123 @@
+.tour {
+  padding: 3rem ;
+
+  &__first-part {
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+
+  &__text {
+    font-size: 3rem;
+    //line-height: 1.4;
+    padding: 5rem 15rem;
+    text-align: justify;
+  }
+
+  &__figure {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid $color-gray-light-1;
+  }
+
+  &__pics {
+    padding: 2rem;
+  }
+
+  &__caption {
+    padding: 1rem;
+  }
+}
+
+//....part 2:text-pic....//
+
+.text-pic {
+
+  &__box {
+    position: relative;
+    height: 146rem;
+  }
+
+  &__photo {
+    position: absolute;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, .3);
+    transform: scale(1);
+    transition: all .3s;
+
+    &-1 {
+      top: 3.75rem;
+      right: 0;
+    }
+
+    &-2 {
+      top: 3rem;
+      left: 0;
+    }
+
+    &-3 {
+      top: 3.75rem;
+      right: 0;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      z-index: 1000;
+    }
+
+  }
+
+
+
+  &__paragraph {
+    width: 70%;
+    font-size: 2.25rem;
+    line-height: 1.7;
+    padding: 6.7rem 6rem 3.75rem 6rem;
+    background-color: #f1f7f8;
+    box-shadow: 0 1rem 4rem rgba(0,0,0, .4);
+    border-radius: 5px;
+    position: absolute;
+    transform: scale(1);
+    outline-offset: 1.5rem;
+    transition: all .3s;
+
+    float: left;
+    z-index: 200;
+
+    &-1 {
+      top: 48rem;
+      left: 0;
+    }
+
+    &-2 {
+      top: 48rem;
+      right: 0;
+    }
+
+    &-3 {
+      top: 48rem;
+      left: 0;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      outline: .5rem solid $color-white;
+    }
+  }
+
+
+
+  &__underlined-title {
+    font-size: 3rem;
+    border-bottom: 2px solid $color-blue-medium;
+    //display: inline-block;
+    padding-bottom: 1.55rem;
+    margin: 3rem auto 1rem 0;
+  }
+
+}

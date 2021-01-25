@@ -1,0 +1,23 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+    //&:not(:last-child) {
+    //  margin-bottom: $gutter-vertical;
+    //}
+  }
+
+.column {
+    width: calc((100% - #{$gutter-horizental}) / 2);
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizental;
+    }
+  }

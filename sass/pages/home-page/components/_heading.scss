@@ -1,0 +1,138 @@
+
+.heading-huge {
+  width: max-content;
+  color: $color-white;
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  animation: inDownUp .5s ease-in .7s;
+  animation-fill-mode: backwards;
+
+  &__span {
+    color: $color-blue-light;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    transition: all .3s;
+
+    &:hover,
+    &:active {
+      transform: translateZ(2rem) scale(1.1);
+      color: $color-white;
+    }
+  }
+
+  @include respond(tab-land) {
+    font-size: 5.5rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+.heading-huge-2 {
+  color: $color-white;
+  font-size: 4.75rem;
+  letter-spacing: .7rem;
+  text-transform: uppercase;
+  text-align: center;
+  animation: inDownUp .5s ease-in .7s;
+  animation-fill-mode: backwards;
+
+  @include respond(tab-land) {
+    font-size: 3.75rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+//......ANIMATION of HEADER HUGE.............//
+@keyframes inDownUp {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//......HEADER INSIDE THE WEB.............//
+
+.heading-big {
+  font-size: 3.7rem;
+  color: $color-gray-medium;
+  padding: 2.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 9999;
+
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+.heading-medium {
+  font-size: 3.4rem;
+  color: $color-gray-medium;
+  padding: 2.8rem;
+  margin: 2rem;
+  text-transform: uppercase;
+
+  @include respond(tab-land) {
+    font-size: 2.75rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.57rem;
+  }
+}
+
+.heading-small {
+  font-size: 2.5rem;
+  color: $color-gray-medium;
+  padding: 1.75rem;
+  margin-top: 1.75rem;
+  text-transform: uppercase;
+
+  @include respond(tab-land) {
+    font-size: 2.1rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.75rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
+}
+
