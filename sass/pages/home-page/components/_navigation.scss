@@ -1,7 +1,7 @@
-            //  <!------------------------->
-            // <!---/****HOME PAGE****/---->
-            //  <!--//...NAVIGATION....//-->
-            //<!------------------------->
+//  <!------------------------->
+// <!---/****HOME PAGE****/---->
+//  <!--//...NAVIGATION....//-->
+//<!------------------------->
 .navigation {
   transition: background-color .5s ease;
 
@@ -12,12 +12,13 @@
     left: 0;
     z-index: 1000;
     background-color: transparent;
+
   }
 
   &__list {
     list-style: none;
     margin-left: 50rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     @include respond(medium-desktop) {
       margin-left: 45rem;
@@ -43,7 +44,7 @@
       color: $color-white;
       font-size: 2rem;
       text-transform: uppercase;
-      padding: 1rem 0;//padding-bottom is for space between line and text
+      padding: 1rem 0; //padding-bottom is for space between line and text
       position: relative; //used by absolute for positioning underline
     }
 
@@ -52,14 +53,14 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      content: "";//after element that has no content is positioned in the right bottom hand corner of the after element
+      content: ""; //after element that has no content is positioned in the right bottom hand corner of the after element
       //display: block;
       height: 2px;
       line-height: 1;
       width: 100%;
       background-color: $color-white;
       transform-origin: right bottom; //relative to parent element.when cursor go to this place is started
-      transform: scaleX(0);// ti is compress to right hand side,
+      transform: scaleX(0); // ti is compress to right hand side,
       transition: transform 0.4s linear;
     }
 
@@ -76,9 +77,10 @@
   //for toggle navigation
 
   &__toggle {
-      position: relative;
+    position: relative;
 
   }
+
   @include respond(tab-port) {
 
   }
@@ -87,7 +89,7 @@
 ////////////////////
 //for scroll down
 .solid {
-  background-color: rgba(0,0,0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
   transition: background-color 1s ease 0s;
   height: 10rem;
 }
@@ -95,6 +97,15 @@
 .current-page {
   border-bottom: 2px solid $color-blue-light;
 }
+///////////////////////////////
+//scroll part
+.bg-nav {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  transition: background-color 1s ease 0s;
+  height: 10rem;
+  //height: 15vh;
+}
+
 
 
 

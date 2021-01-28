@@ -26,8 +26,14 @@
     opacity: .7;
   }
 
+  &__scroll-logo {
+    height: 9rem !important;
+    transition: all .2s;
+  }
+
   &__logo-pic {
-    height: 13.45rem;
+    height: 12.45rem;
+
 
     @include respond(tab-land) {
       height: 11.45rem;

@@ -163,14 +163,14 @@ body {
   .navigation__list {
     list-style: none;
     margin-left: 50rem;
-    margin-top: 3rem; }
+    margin-top: 2rem; }
     @media only screen and (max-width: 90em) {
       .navigation__list {
         margin-left: 45rem;
         margin-top: 1.5rem; } }
     @media only screen and (max-width: 86.25em) {
       .navigation__list {
-        margin-left: 35rem;
+        margin-left: 32rem;
         margin-top: 1.5rem; } }
   .navigation__item {
     display: inline-block;
@@ -198,6 +198,8 @@ body {
     transform: scaleX(1);
     transform-origin: left bottom;
     transition: transform .4s linear; }
+  .navigation__toggle {
+    position: relative; }
 
 .solid {
   background-color: rgba(0, 0, 0, 0.7) !important;
@@ -206,6 +208,11 @@ body {
 
 .current-page {
   border-bottom: 2px solid #b3c0e3; }
+
+.bg-nav {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  transition: background-color 1s ease 0s;
+  height: 10rem; }
 
 .research-card__btn:link, .research-card__btn:visited {
   position: absolute;
@@ -315,8 +322,11 @@ body {
     top: 2rem;
     left: 2rem;
     opacity: .7; }
+  .header__scroll-logo {
+    height: 9rem !important;
+    transition: all .2s; }
   .header__logo-pic {
-    height: 13.45rem; }
+    height: 12.45rem; }
     @media only screen and (max-width: 75em) {
       .header__logo-pic {
         height: 11.45rem; } }
