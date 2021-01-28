@@ -17,14 +17,10 @@ window.addEventListener("scroll", function () {
 
     if (window.scrollY >= 250) {
         nav.classList.add("bg-nav");
-        logo.classList.add("header__scroll-logo")
-        // document.querySelectorAll(".navigation__link").style.color = "#3e3e3e"
-        // document.querySelector(".header__logo-pic").style.height="2.75rem"
-        // document.querySelector(".salon-header__collapse-icon").style.top = "0"
-        // document.querySelector(".salon-header__list-nav").style.margin="1rem 5.25rem 0 0"
+        // logo.classList.add("header__scroll-logo")
     } else
         nav.classList.remove("bg-nav");
-        logo.classList.remove("header__scroll-logo")
+
 })
 // $(document).ready(function () {
 //     checkScroll();
