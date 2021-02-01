@@ -12,7 +12,6 @@
     left: 0;
     z-index: 1000;
     background-color: transparent;
-
   }
 
   &__list {
@@ -29,7 +28,6 @@
       margin-left: 32rem;
       margin-top: 1.5rem;
     }
-
   }
 
   &__item {
@@ -70,19 +68,15 @@
       transform-origin: left bottom;
       transition: transform .4s linear;
     }
-
   }
-
   ///////////////////////////////////
   //for toggle navigation
 
   &__toggle {
     position: relative;
-
   }
 
   @include respond(tab-port) {
-
   }
 }
 
