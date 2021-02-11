@@ -40,7 +40,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.8;
   color: #1c1c1c;
   box-sizing: border-box; }
 
@@ -51,10 +51,9 @@ body {
 .heading-huge {
   width: max-content;
   color: #fff;
-  font-size: 6rem;
-  letter-spacing: 1rem;
+  font-size: 4.5rem;
+  letter-spacing: 1.7rem;
   text-transform: uppercase;
-  margin-bottom: 2rem;
   animation: inDownUp .5s ease-in .7s;
   animation-fill-mode: backwards; }
   .heading-huge__span {
@@ -68,31 +67,21 @@ body {
       color: #fff; }
   @media only screen and (max-width: 75em) {
     .heading-huge {
-      font-size: 5.5rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .heading-huge {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-huge {
-      font-size: 3rem; } }
+      letter-spacing: 1.2rem; } }
 
 .heading-huge-2 {
   color: #fff;
-  font-size: 4.25rem;
+  font-size: 3rem;
+  font-weight: 400;
   letter-spacing: .7rem;
   text-transform: uppercase;
+  margin-top: 2.75rem;
   text-align: center;
   animation: inDownUp .5s ease-in .7s;
   animation-fill-mode: backwards; }
-  @media only screen and (max-width: 75em) {
-    .heading-huge-2 {
-      font-size: 3.75rem; } }
   @media only screen and (max-width: 56.25em) {
     .heading-huge-2 {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-huge-2 {
-      font-size: 2.5rem; } }
+      margin-top: 1.75rem; } }
 
 @keyframes inDownUp {
   0% {
@@ -103,53 +92,26 @@ body {
     transform: translateY(0); } }
 
 .heading-big {
-  font-size: 3.7rem;
+  font-size: 2.75rem;
   color: #4f4f4f;
   padding-top: 2.8rem;
   text-transform: uppercase;
   text-align: center;
   z-index: 9999; }
-  @media only screen and (max-width: 75em) {
-    .heading-big {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .heading-big {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-big {
-      font-size: 2rem; } }
 
 .heading-medium {
-  font-size: 3.4rem;
+  font-size: 2.4rem;
   color: #4f4f4f;
   padding: 2.8rem;
   margin: 2rem;
   text-transform: uppercase; }
-  @media only screen and (max-width: 75em) {
-    .heading-medium {
-      font-size: 2.75rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .heading-medium {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-medium {
-      font-size: 1.57rem; } }
 
 .heading-small {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #4f4f4f;
   padding: 1.75rem;
   margin-top: 1.75rem;
   text-transform: uppercase; }
-  @media only screen and (max-width: 75em) {
-    .heading-small {
-      font-size: 2.1rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .heading-small {
-      font-size: 1.75rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-small {
-      font-size: 1.4rem; } }
 
 .navigation {
   transition: background-color .5s ease; }
@@ -340,13 +302,13 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -30%); }
 
 .short-explain {
   background-color: #e0e0e0;
   margin: 0 auto; }
   .short-explain__text {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     line-height: 1.4;
     padding: 2.75rem 15rem;
     text-align: justify; }
@@ -429,12 +391,11 @@ body {
   .tour__first-part {
     text-align: center; }
   .tour__heading {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-top: 3rem; }
+    font-size: 3.75rem;
+    font-weight: 700; }
   .tour__text {
-    font-size: 3rem;
-    padding: 5rem 15rem;
+    font-size: 1.8rem;
+    padding: 2.75rem 15rem;
     text-align: justify; }
   .tour__figure {
     margin-bottom: 3rem;
